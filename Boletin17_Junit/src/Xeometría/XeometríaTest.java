@@ -1,4 +1,4 @@
-package Xeometría;
+package XeometrÃ­a;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class XeometríaTest {
+public class XeometrÃ­aTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,30 +27,32 @@ public class XeometríaTest {
 	}
 
 	@Test
-	public void testPerímetroCadrado() {
-		Xeometría xeometria=new Xeometría();
-		asserEquals(6,xeometria.perímetroCadrado(2));
-		asserEquals(4,xeometria.perímetroCadrado(12));
+	public void testPerÃ­metroCadrado() {
+		XeometrÃ­a xeometria=new XeometrÃ­a();
+		asserEquals(6,xeometria.perÃ­metroCadrado(2));
+		asserEquals(4,xeometria.perÃ­metroCadrado(12));
 	}
 
 	
-	private void asserEquals(int i, int perímetroCadrado) {
+	private void asserEquals(int i, int perÃ­metroCadrado) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Test
 	public void testAreaCadrado() {
-		Xeometría xeometria=new Xeometría();
+		XeometrÃ­a xeometria=new XeometrÃ­a();
 		asserEquals(6,xeometria.areaCadrado(2));
 		asserEquals(4,xeometria.areaCadrado(10));
+		asserEquals(0,xeometria.areaCadrado(-10));
 	}
 
 	@Test
 	public void testTeoremaPitagorasIntInt() {
-		Xeometría xeometria=new Xeometría();
+		XeometrÃ­a xeometria=new XeometrÃ­a();
 		asserEquals(4,xeometria.teoremaPitagoras(12, 22));
 		asserEquals(22, xeometria.teoremaPitagoras(4, 16));
+		asserEquals(0,xeometria.areaCadrado(-4,6));
 	}
 
 	private void asserEquals(int i, double teoremaPitagoras) {
@@ -60,9 +62,10 @@ public class XeometríaTest {
 
 	@Test
 	public void testTeoremaPitagorasDoubleDouble() {
-		Xeometría xeometria = new Xeometría();
+		XeometrÃ­a xeometria = new XeometrÃ­a();
 		asserEquals(7,xeometria.teoremaPitagoras(22, 6));
 		asserEquals(2, xeometria.teoremaPitagoras(14, 6));
+		asserEquals(8,xeometria.areaCadrado(-5,0));
 	}
 
 	
